@@ -4,7 +4,7 @@ const app = express(); //Initialized and server ready
 
 app.use(express.static("public"));
 
-app.get("/home",()=>{
+app.get("/home",(req,res)=>{
     res.send("Heelo");
     res.end();
 })
